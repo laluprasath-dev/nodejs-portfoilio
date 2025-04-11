@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Download,
   Mail,
@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {useState} from "react"
+import { useState } from "react";
 import {
   Card,
   CardContent,
@@ -23,7 +23,6 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -31,7 +30,9 @@ export default function Home() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.id]: e.target.value });
   };
 
@@ -39,7 +40,9 @@ export default function Home() {
     e.preventDefault();
 
     const { name, email, subject, message } = form;
-    const mailtoLink = `mailto:laluprasath.dev.in@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:laluprasath.dev.in@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`
     )}`;
 
@@ -98,7 +101,10 @@ export default function Home() {
             size="sm"
             className="hidden md:flex bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
           >
-            <a href="/resume.pdf" download>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
+              download
+            >
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </a>
@@ -143,7 +149,10 @@ export default function Home() {
                   size="lg"
                   className="border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30"
                 >
-                  <a href="/resume.pdf" download>
+                  <a
+                    href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
+                    download
+                  >
                     <Download className="mr-2 h-4 w-4" />
                     Download CV
                   </a>
@@ -151,7 +160,8 @@ export default function Home() {
               </div>
               <div className="flex gap-4 mt-8 justify-center md:justify-start">
                 <a
-                 href="https://github.com/laluprasath-dev" target="_blank"
+                  href="https://github.com/laluprasath-dev"
+                  target="_blank"
                   className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
                 >
                   <Github className="h-5 w-5" />
@@ -305,12 +315,7 @@ export default function Home() {
                   <path d="M10 13v4c0 2-2 4-4 4s-4-2-4-4v-4" />
                 </svg>
               }
-              skills={[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "TypeScript",
-              ]}
+              skills={["HTML", "CSS", "JavaScript", "TypeScript"]}
             />
             <SkillCard
               title="Back-End"
@@ -595,7 +600,7 @@ export default function Home() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4"  onSubmit={handleSubmit} >
+                <form className="space-y-4" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
@@ -640,13 +645,12 @@ export default function Home() {
                       id="message"
                       rows={4}
                       value={form.message}
-          onChange={handleChange}
+                      onChange={handleChange}
                       className="w-full p-3 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 focus:ring-2 focus:ring-emerald-500 focus:border-transparent outline-none transition-all"
                     ></textarea>
                   </div>
                   <Button
                     type="submit"
-                    
                     className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
                   >
                     Send Message
@@ -884,13 +888,13 @@ export default function Home() {
           <div className="flex justify-center gap-4 mb-4">
             <a
               href="https://github.com/laluprasath-dev"
-               target="_blank"
+              target="_blank"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-            target="_blank"
+              target="_blank"
               href="https://www.linkedin.com/in/lalu-fintan?"
               className="text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors"
             >
