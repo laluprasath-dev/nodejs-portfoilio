@@ -105,7 +105,6 @@ export default function Home() {
               href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
               target="_blank"
               rel="noopener noreferrer"
-              download
             >
               <Download className="mr-2 h-4 w-4" />
               Download CV
@@ -153,7 +152,6 @@ export default function Home() {
                 >
                   <a
                     href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
-                    download
                     target="_blank"
                     rel="noopener noreferrer"
                   >
