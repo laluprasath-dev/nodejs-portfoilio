@@ -102,7 +102,7 @@ export default function Home() {
             className="hidden md:flex bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white border-0"
           >
             <a
-              href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
+              href="https://storage.googleapis.com/busines_logo/busines_logo/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -151,7 +151,7 @@ export default function Home() {
                   className="border-emerald-200 dark:border-emerald-800 hover:bg-emerald-50 dark:hover:bg-emerald-900/30"
                 >
                   <a
-                    href="https://drive.google.com/uc?export=download&id=1cI8KMkP3lz9RLw1QAAP8ni3fJKpjBx-w"
+                    href="https://storage.googleapis.com/busines_logo/busines_logo/resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
